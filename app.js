@@ -6,7 +6,7 @@ const CONFIG = (() => {
     schoolShort: "THPT Thạch Thất",
     className:   "12A01",
     dateText:    "29/11/2026",
-    timeText:    "10h30 – 12h00",
+    timeText:    "9h30 – 11h30",
     startISO:    "2026-11-29T10:30:00+07:00", // mốc đếm ngược, cứng +07:00
     endISO:      "2026-11-29T12:00:00+07:00", // sau mốc này = "đã diễn ra"
     phone:       "0345006912",                // GĐ8 (D33): dùng cho tel:
