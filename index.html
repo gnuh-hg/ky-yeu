@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Thiệp mời kỉ yếu 12A01 – THPT Thạch Thất</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400&family=Lovers+Quarrel&family=Paytone+One&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* intro chỉ bật khi không reduced-motion; 'go' có lưới an toàn 3s phòng app.js lỗi */
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.className='intro';setTimeout(function(){document.documentElement.classList.add('go')},3000)}</script>
+</head>
+<body>
+<svg id="bg" aria-hidden="true">
+  <defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e8c887"/><stop offset="1" stop-color="#b8864b"/></linearGradient></defs>
+  <g id="world"><g id="layer"></g></g>
+</svg>
+<div class="scrim" aria-hidden="true"></div>
+<svg id="frame" aria-hidden="true"><rect id="fr" pathLength="1" rx="3"/></svg>
+<main>
+  <section id="s1">
+    <p class="kicker fade" style="--d:1.2s">Thư mời</p>
+    <h1 data-t="title" data-split style="--d:1.5s"></h1>
+    <p class="school fade" data-t="school" style="--d:2.1s"></p>
+    <p class="kicker from fade" style="--d:2.3s">Lời mời từ</p>
+    <h2 class="name" data-t="inviter" data-split style="--d:2.4s"></h2>
+  </section>
+  <section id="s2">
+    <div class="row fade" style="--d:2.5s"><span class="lbl">Ngày</span><span class="val" data-t="date"></span></div>
+    <div class="row fade" style="--d:2.6s"><span class="lbl">Giờ</span><span class="val" data-t="time"></span></div>
+    <div id="countdown" class="fade" role="timer" aria-live="off" style="--d:2.7s">
+      <div id="cd-grid" class="cd" aria-hidden="true"></div>
+      <p id="cd-msg" class="cdm" hidden></p>
+      <span id="cd-sr" class="sr"></span>
+    </div>
+  </section>
+  <section id="end">
+    <p class="thanks fade" data-t="thanks" style="--d:2.8s"></p>
+    <p class="contact fade" style="--d:2.9s"><span class="lbl">Liên hệ</span><a id="tel" data-t="phoneText"></a></p>
+  </section>
+</main>
+<noscript>Kỉ yếu lớp 12A01, THPT Thạch Thất. 29/11/2026, 10h30 – 12h00. Người mời: Nguyễn Mạnh Hùng. Liên hệ: 0345 006 912.</noscript>
+<script src="app.js"></script>
+</body>
+</html>
